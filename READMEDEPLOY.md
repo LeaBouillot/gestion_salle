@@ -6,7 +6,7 @@ DATABASE_URL="mysql://DB_USER:DB_PASSWORD@IP_HOST/DB_NAME"
 - GO TO HOSTINGER tableau aboard of the hall4all.fr then gestionnaire des fichier
 
 - inside public_html, drop all the files of symfony project of local
-- connection to the FTP via compte connection FTP
+
   -transfer all the neccessary files excluding .git, vendor, .gitignore with .env in dev mode always for the moment
 
 -Open cmd line terminal in your computer and login to the hostinger SSH using the connection SSH provided by the hostinger
@@ -16,10 +16,11 @@ DATABASE_URL="mysql://DB_USER:DB_PASSWORD@IP_HOST/DB_NAME"
 -and then lanch the command to change the permissions to the dossier public_html
 chmod -R 755 public_html
 
-- inside the cmd line terminal
-  go to public_html (cd public_html)
-  and run
+- inside the cmd line terminal go to public_html
+  cd public_html
+
   php bin/console doctrine:migrations:migrate --env=prod
+
   // BUT THIS WAS NOT WORKING SAID PDO DRIVER NOT FOUND
   THEN use phpmyadmin of the hostinger for hall4all.fr and import the db directly using phpMyAdmin
 
