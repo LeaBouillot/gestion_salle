@@ -5,7 +5,7 @@
 
 {% block body %}
 
-	<h1 class="mb-6 text-3xl font-bold text-center">DISCOVER YOUR FUTURE RENT 
+	<h1 class="mt-16 mb-16 text-3xl font-bold text-center">DISCOVER YOUR FUTURE RENT 
 	</h1>
 
 	<div class="grid grid-cols-3 gap-4 pl-20 pr-20">
@@ -31,7 +31,7 @@
 	{% endfor %}
 
 		{% for hall in halls %}
-			<div class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+			<div class="max-w-sm mx-auto mb-10 overflow-hidden bg-white rounded-lg shadow-lg ">
 				<!-- Main Image -->
 				<img
 				class="w-full img-zoom-effect presentation-img" src="{{ asset('img/halls/' ~ hall.mainImg) }}" alt="Hall Image">
