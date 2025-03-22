@@ -1,7 +1,7 @@
 -CREATED A DATABASE IN HOSTINGER
 
 -CHANGES in .env file for the databse name, id, password and the site.
-DATABASE_URL="mysql://DB_USER:DB_PASSWORD@DB_HOST/DB_NAME"
+DATABASE_URL="mysql://DB_USER:DB_PASSWORD@IP_HOST/DB_NAME"
 
 - GO TO HOSTINGER tableau aboard of the hall4all.fr then gestionnaire des fichier
 
